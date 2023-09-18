@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            height: 150px;
+            background-color: antiquewhite;
+            font-size: 100px;
+            display: flex;
+            
+        }
+        #login {
+            width: 100px;
+            margin: 0;
+            display: inline;
+        }
+        #id{
+            height: 60px;
+        }
+        .content{
+            display: flex;
+        }
+
+        .buttons{
+            width: 15%;
+            height: 300px;
+            background-color: aliceblue;
+           
+        }
+
+        button{
+            display: block;
+            width: 50%;
+            height: 60px;
+            
+            margin: auto;
+            margin-top: 30px;
+        }
+    </style>
+    <script>
+        var login = document.getElementById("login");
+        var head = document.getElementById("head");
+        function loginEvent() {
+            var id = document.getElementById("id");
+            if(id.value == '202127006'){
+                id.style.display="none"
+                login.innerText = "로그아웃";
+                head.innerHTML = "박기철 <img src=\"https://ko.m.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC:Google_%22G%22_Logo.svg\">"
+            }
+
+            else{
+                alert("아이디가 다릅니다.");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div id="head">
+        <input type="text" name="id" id="id">
+        <button id="login" onclick="loginEvent()">로그인</button>
+    </div>
+    <div class="content">
+        <div class="buttons">
+            <button>
+                버튼1
+            </button>
+            <button>
+                버튼2
+            </button>
+            <button>
+                버튼3
+            </button>
+
+        </div>
+        <div class="paragraph">
+
+        </div>
+    </div>
+    
+
+</body>
+</html>
