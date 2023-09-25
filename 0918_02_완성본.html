@@ -43,13 +43,12 @@
             margin-top: 30px;
         }
     </style>
-
 </head>
 <body>
     
     <div id="head">
         <input type="text" name="id" id="id">
-        <span id="login-data">박기철 <img src="https://ko.m.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC:Google_%22G%22_Logo.svg"></span>
+        <span id="login-data">박기철 <img src=""></span>
         <button id="login" onclick="loginEvent()">로그인</button>
     </div>
     <div class="content">
@@ -60,7 +59,7 @@
             <button onclick="texting(2)">
                 버튼2
             </button>
-            <button onclick="textiong(3)">
+            <button onclick="texting(3)">
                 버튼3
             </button>
 
@@ -98,18 +97,18 @@
         var p = document.getElementById("paragraph");
 
         function texting(index){
-            if (index === 1)
+            if (index == 1)
             {
                 p.innerHTML = "";
             }
 
-            else if (index === 2)
+            else if (index == 2)
             {
-                p.indexHTML = "하이브리드 앱은 앱을 만드는 법을 배우는 과목이다."
+                p.innerHTML = "하이브리드 앱은 앱을 만드는 법을 배우는 과목이다."
             }
 
-            else if(index === 3){
-                p.indexHTML = "쓸말이 없어요."
+            else if(index == 3){
+                p.innerHTML = "쓸말이 없어요."
             }
         }
     </script>
